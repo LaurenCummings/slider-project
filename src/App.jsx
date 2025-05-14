@@ -22,7 +22,7 @@ function App() {
           return (
             <article key={id}>
               <img src={image} alt={name} className="person-image" />
-              <h4>{name}</h4>
+              <h4 className="name">{name}</h4>
               <p className="title">{title}</p>
               <p className="text">{quote}</p>
               <FaQuoteRight className="icon" />
