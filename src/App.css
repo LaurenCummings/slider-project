@@ -4,12 +4,6 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* .section {
-  width: 70%;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-} */
 
 .section-center {
   margin: 0 auto;
@@ -34,6 +28,7 @@ article {
 
 .title h2 {
   font-weight: 400;
+  text-align: center;
 }
 
 .person-image {
