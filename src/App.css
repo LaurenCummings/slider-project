@@ -47,6 +47,10 @@ article {
   text-transform: capitalize;
 }
 
+.title {
+  text-transform: capitalize;
+}
+
 article.activeSlide {
   opacity: 1;
   transform: translateX(0);
