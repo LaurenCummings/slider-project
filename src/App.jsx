@@ -37,7 +37,7 @@ function App() {
 
   return (
     <section className="section">
-      <div className="title">
+      <div className="section-title">
         <h2>
           <span>/</span>Reviews  
         </h2>

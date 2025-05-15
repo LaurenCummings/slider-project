@@ -31,7 +31,7 @@ article {
   transition: var(--transition);
 }
 
-.title h2 {
+.section-title h2 {
   font-weight: 400;
   text-align: center;
 }
