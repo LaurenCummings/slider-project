@@ -8,6 +8,22 @@ function App() {
   const [people, setPeople] = useState(data);
   const [index, setIndex] = useState(0);
 
+  function handlePrev() {
+    if (index === 0) {
+      setIndex(people.length - 1);
+    } else {
+      setIndex(index - 1);
+    }
+  }
+
+  function handleNext() {
+    if (index === people.length - 1) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+    }
+  }
+
   return (
     <section className="section">
       <div className="title">
@@ -37,10 +53,10 @@ function App() {
             </article>
           );
         })}
-        <button className="prev" onClick={() => setIndex(index - 1)}>
+        <button className="prev" onClick={handlePrev}>
           <FiChevronLeft />
         </button>
-        <button className="next" onClick={() => setIndex(index + 1)}>
+        <button className="next" onClick={handleNext}>
           <FiChevronRight />
         </button>
       </div>
