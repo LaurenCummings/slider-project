@@ -8,6 +8,17 @@ function App() {
   const [people, setPeople] = useState(data);
   const [index, setIndex] = useState(0);
 
+  useEffect(() => {
+    let slider = setInterval(() => {
+      if (index === people.length - 1) {
+        setIndex(0);
+      } else {
+        setIndex(index + 1);
+      }
+    }, 3000)
+    return () => clearInterval(slider);
+  }, [index])
+
   function handlePrev() {
     if (index === 0) {
       setIndex(people.length - 1);
